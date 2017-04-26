@@ -1,11 +1,11 @@
 #! /usr/bin/python
 
-import sys
+import fileinput
 i = 0
 array = []
 meansum = 0
 sumdif = 0
-for line in sys.stdin:
+for line in fileinput.input():
   line = line.strip()
   num = float(line)
   array.append(num)

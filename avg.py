@@ -1,10 +1,10 @@
 #! /usr/bin/python
 
-import sys
+import fileinput
 
 sum = 0
 i = 0  
-for line in sys.stdin:
+for line in fileinput.input():
   line = line.strip()
   num = float(line)
   sum += num
